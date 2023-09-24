@@ -1,0 +1,335 @@
+/* Universal Stylings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 12%;
+    z-index: 10;
+}
+.navbar_netflix{
+    height: 100%;
+    width: 125px;
+}
+.navbar_nav_items{
+    display: flex;
+    gap: 20px;
+}
+.netflix_logo{
+    width: 120%;
+    height: 100%;
+}
+.language_dropdown{
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+.dropdown_container{
+    border: 1.5px solid #fff;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.signin_button{
+    border: #dc030f;
+    background-color: #dc030f;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    height: 35px;
+    width: 80px;
+}
+
+/* Hero Section */
+.hero_bg_img_cont{
+    width: 100%;
+    height: 100%;
+}
+.hero_bg_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero_bg_overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.hero_card{
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero_title{
+    font-weight: 800;
+    font-size: 2.8rem;
+}
+.hero_subtitle,
+.hero_description{
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.email{
+    width: 420px;
+    height: 60px;
+    font-size: large;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    border-color: white;
+    background: rgba(0, 0, 0, 0.7);
+}
+.get_started{
+    font-size: large;
+    width: 170px;
+    height: 60px;
+    margin-left: 8px;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Various Features Section */
+.style_cards h1{
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1rem;
+    padding-left: 0;
+}
+.style_cards h3{
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+.card-2,
+.card-3,
+.card-4{
+    border-bottom: 0.6rem solid rgb(69,69,69);
+    padding: 50px;
+}
+.card-2,
+.footer{
+    border-top: 0.6rem solid rgb(69,69,69);
+    padding: 50px;
+}
+.card-1{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.desc-1{
+    padding-left: 80px;
+}
+.card-1 video{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    
+}
+.card-1 img{
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.card-2{
+    display: flex;
+    justify-content: center;
+}
+.desc-2{
+    margin-top: 70px;
+}
+.card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.desc-3{
+    padding-left: 80px;
+    padding-right: 20px;
+}
+.card-3 img{
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.card-3 video{
+    position: relative;
+    top: -87px;
+    left: 125px;
+    width: 65%;
+    height: 78%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+.card-4{
+    display: flex;
+    justify-content: center;
+}
+.desc-4{
+    margin-top: 70px;
+}
+
+/* Frequently Asked Questions */
+.FAQ{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.FAQ h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 3rem 0 4rem 0;
+}
+.title{
+    background: #303030;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+.icon{
+    width: 20px;
+    position: relative;
+}
+.icon::before, .icon::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    top: -1.5px;
+}
+.icon::after{
+    transform: rotate(90deg);
+    transition: 0.5s linear;
+}
+.text{
+    background: #303030;
+    line-height: 35px;
+    margin: 3px 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.7rem;
+    height: 0;
+    opacity: 0;
+}
+.item:target .text{
+    opacity: 1;
+    height: auto;
+    padding: 20px 30px;
+    margin: 0;
+    border-top: 2px solid #000;
+    margin-bottom: 6px;
+}
+.item:target .icon::after{
+    transform: rotateY(90deg);
+}
+.create{
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+.email-add{
+    width: 420px;
+    height: 60px;
+    font-size: large;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    border-color: white;
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: 80px;
+}
+.get-started{
+    font-size: large;
+    width: 170px;
+    height: 60px;
+    margin-left: 8px;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Footer */
+.footer,
+.footer a{
+    color: #999;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.footer p{
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    padding-left: 80px;
+}
+.footer .footer-col{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+    padding-left: 80px;
+}
+.footer-col ul :hover{
+    cursor: pointer;
+}
+.footer li{
+    line-height: 2;
+    list-style-type: none;
+    text-decoration-line: underline;
+}
+.language-dropdown{
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+.dropdown-container{
+    border: 1.5px solid #fff;
+    width: 100px;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.netflix{
+    margin-top: 30px;
+}
